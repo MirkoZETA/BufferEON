@@ -1,0 +1,617 @@
+{
+    "alias": "BDM_UKNet",
+    "Name": "BDM_UKNet",
+    "nodes": [
+        {
+            "id": 0
+        },
+        {
+            "id": 1
+        },
+        {
+            "id": 2
+        },
+        {
+            "id": 3
+        },
+        {
+            "id": 4
+        },
+        {
+            "id": 5
+        },
+        {
+            "id": 6
+        },
+        {
+            "id": 7
+        },
+        {
+            "id": 8
+        },
+        {
+            "id": 9
+        },
+        {
+            "id": 10
+        },
+        {
+            "id": 11
+        },
+        {
+            "id": 12
+        },
+        {
+            "id": 13
+        },
+        {
+            "id": 14
+        },
+        {
+            "id": 15
+        },
+        {
+            "id": 16
+        },
+        {
+            "id": 17
+        },
+        {
+            "id": 18
+        },
+        {
+            "id": 19
+        },
+        {
+            "id": 20
+        }
+    ],
+    "links": [
+        {
+            "dst": 0,
+            "id": 0,
+            "length": 161,
+            "slots": 320,
+            "src": 1
+        },
+        {
+            "dst": 1,
+            "id": 1,
+            "length": 161,
+            "slots": 320,
+            "src": 0
+        },
+        {
+            "dst": 0,
+            "id": 2,
+            "length": 294,
+            "slots": 320,
+            "src": 2
+        },
+        {
+            "dst": 2,
+            "id": 3,
+            "length": 294,
+            "slots": 320,
+            "src": 0
+        },
+        {
+            "dst": 0,
+            "id": 4,
+            "length": 163,
+            "slots": 320,
+            "src": 3
+        },
+        {
+            "dst": 3,
+            "id": 5,
+            "length": 163,
+            "slots": 320,
+            "src": 0
+        },
+        {
+            "dst": 0,
+            "id": 6,
+            "length": 144,
+            "slots": 320,
+            "src": 5
+        },
+        {
+            "dst": 5,
+            "id": 7,
+            "length": 144,
+            "slots": 320,
+            "src": 0
+        },
+        {
+            "dst": 0,
+            "id": 8,
+            "length": 178,
+            "slots": 320,
+            "src": 7
+        },
+        {
+            "dst": 7,
+            "id": 9,
+            "length": 178,
+            "slots": 320,
+            "src": 0
+        },
+        {
+            "dst": 0,
+            "id": 10,
+            "length": 254,
+            "slots": 320,
+            "src": 13
+        },
+        {
+            "dst": 13,
+            "id": 11,
+            "length": 254,
+            "slots": 320,
+            "src": 0
+        },
+        {
+            "dst": 0,
+            "id": 12,
+            "length": 463,
+            "slots": 320,
+            "src": 19
+        },
+        {
+            "dst": 19,
+            "id": 13,
+            "length": 463,
+            "slots": 320,
+            "src": 0
+        },
+        {
+            "dst": 1,
+            "id": 14,
+            "length": 160,
+            "slots": 320,
+            "src": 2
+        },
+        {
+            "dst": 2,
+            "id": 15,
+            "length": 160,
+            "slots": 320,
+            "src": 1
+        },
+        {
+            "dst": 1,
+            "id": 16,
+            "length": 43,
+            "slots": 320,
+            "src": 18
+        },
+        {
+            "dst": 18,
+            "id": 17,
+            "length": 43,
+            "slots": 320,
+            "src": 1
+        },
+        {
+            "dst": 2,
+            "id": 18,
+            "length": 140,
+            "slots": 320,
+            "src": 18
+        },
+        {
+            "dst": 18,
+            "id": 19,
+            "length": 140,
+            "slots": 320,
+            "src": 2
+        },
+        {
+            "dst": 2,
+            "id": 20,
+            "length": 361,
+            "slots": 320,
+            "src": 19
+        },
+        {
+            "dst": 19,
+            "id": 21,
+            "length": 361,
+            "slots": 320,
+            "src": 2
+        },
+        {
+            "dst": 3,
+            "id": 22,
+            "length": 25,
+            "slots": 320,
+            "src": 4
+        },
+        {
+            "dst": 4,
+            "id": 23,
+            "length": 25,
+            "slots": 320,
+            "src": 3
+        },
+        {
+            "dst": 3,
+            "id": 24,
+            "length": 56,
+            "slots": 320,
+            "src": 5
+        },
+        {
+            "dst": 5,
+            "id": 25,
+            "length": 56,
+            "slots": 320,
+            "src": 3
+        },
+        {
+            "dst": 3,
+            "id": 26,
+            "length": 52,
+            "slots": 320,
+            "src": 6
+        },
+        {
+            "dst": 6,
+            "id": 27,
+            "length": 52,
+            "slots": 320,
+            "src": 3
+        },
+        {
+            "dst": 3,
+            "id": 28,
+            "length": 139,
+            "slots": 320,
+            "src": 18
+        },
+        {
+            "dst": 18,
+            "id": 29,
+            "length": 139,
+            "slots": 320,
+            "src": 3
+        },
+        {
+            "dst": 4,
+            "id": 30,
+            "length": 37,
+            "slots": 320,
+            "src": 5
+        },
+        {
+            "dst": 5,
+            "id": 31,
+            "length": 37,
+            "slots": 320,
+            "src": 4
+        },
+        {
+            "dst": 5,
+            "id": 32,
+            "length": 37,
+            "slots": 320,
+            "src": 7
+        },
+        {
+            "dst": 7,
+            "id": 33,
+            "length": 37,
+            "slots": 320,
+            "src": 5
+        },
+        {
+            "dst": 6,
+            "id": 34,
+            "length": 68,
+            "slots": 320,
+            "src": 7
+        },
+        {
+            "dst": 7,
+            "id": 35,
+            "length": 68,
+            "slots": 320,
+            "src": 6
+        },
+        {
+            "dst": 6,
+            "id": 36,
+            "length": 72,
+            "slots": 320,
+            "src": 8
+        },
+        {
+            "dst": 8,
+            "id": 37,
+            "length": 72,
+            "slots": 320,
+            "src": 6
+        },
+        {
+            "dst": 7,
+            "id": 38,
+            "length": 134,
+            "slots": 320,
+            "src": 8
+        },
+        {
+            "dst": 8,
+            "id": 39,
+            "length": 134,
+            "slots": 320,
+            "src": 7
+        },
+        {
+            "dst": 7,
+            "id": 40,
+            "length": 35,
+            "slots": 320,
+            "src": 9
+        },
+        {
+            "dst": 9,
+            "id": 41,
+            "length": 35,
+            "slots": 320,
+            "src": 7
+        },
+        {
+            "dst": 8,
+            "id": 42,
+            "length": 53,
+            "slots": 320,
+            "src": 10
+        },
+        {
+            "dst": 10,
+            "id": 43,
+            "length": 53,
+            "slots": 320,
+            "src": 8
+        },
+        {
+            "dst": 8,
+            "id": 44,
+            "length": 209,
+            "slots": 320,
+            "src": 14
+        },
+        {
+            "dst": 14,
+            "id": 45,
+            "length": 209,
+            "slots": 320,
+            "src": 8
+        },
+        {
+            "dst": 8,
+            "id": 46,
+            "length": 280,
+            "slots": 320,
+            "src": 15
+        },
+        {
+            "dst": 15,
+            "id": 47,
+            "length": 280,
+            "slots": 320,
+            "src": 8
+        },
+        {
+            "dst": 8,
+            "id": 48,
+            "length": 216,
+            "slots": 320,
+            "src": 19
+        },
+        {
+            "dst": 19,
+            "id": 49,
+            "length": 216,
+            "slots": 320,
+            "src": 8
+        },
+        {
+            "dst": 8,
+            "id": 50,
+            "length": 231,
+            "slots": 320,
+            "src": 20
+        },
+        {
+            "dst": 20,
+            "id": 51,
+            "length": 231,
+            "slots": 320,
+            "src": 8
+        },
+        {
+            "dst": 9,
+            "id": 52,
+            "length": 66,
+            "slots": 320,
+            "src": 10
+        },
+        {
+            "dst": 10,
+            "id": 53,
+            "length": 66,
+            "slots": 320,
+            "src": 9
+        },
+        {
+            "dst": 9,
+            "id": 54,
+            "length": 69,
+            "slots": 320,
+            "src": 12
+        },
+        {
+            "dst": 12,
+            "id": 55,
+            "length": 69,
+            "slots": 320,
+            "src": 9
+        },
+        {
+            "dst": 9,
+            "id": 56,
+            "length": 90,
+            "slots": 320,
+            "src": 13
+        },
+        {
+            "dst": 13,
+            "id": 57,
+            "length": 90,
+            "slots": 320,
+            "src": 9
+        },
+        {
+            "dst": 10,
+            "id": 58,
+            "length": 51,
+            "slots": 320,
+            "src": 11
+        },
+        {
+            "dst": 11,
+            "id": 59,
+            "length": 51,
+            "slots": 320,
+            "src": 10
+        },
+        {
+            "dst": 11,
+            "id": 60,
+            "length": 11,
+            "slots": 320,
+            "src": 12
+        },
+        {
+            "dst": 12,
+            "id": 61,
+            "length": 11,
+            "slots": 320,
+            "src": 11
+        },
+        {
+            "dst": 12,
+            "id": 62,
+            "length": 283,
+            "slots": 320,
+            "src": 14
+        },
+        {
+            "dst": 14,
+            "id": 63,
+            "length": 283,
+            "slots": 320,
+            "src": 12
+        },
+        {
+            "dst": 13,
+            "id": 64,
+            "length": 159,
+            "slots": 320,
+            "src": 14
+        },
+        {
+            "dst": 14,
+            "id": 65,
+            "length": 159,
+            "slots": 320,
+            "src": 13
+        },
+        {
+            "dst": 14,
+            "id": 66,
+            "length": 103,
+            "slots": 320,
+            "src": 16
+        },
+        {
+            "dst": 16,
+            "id": 67,
+            "length": 103,
+            "slots": 320,
+            "src": 14
+        },
+        {
+            "dst": 15,
+            "id": 68,
+            "length": 84,
+            "slots": 320,
+            "src": 16
+        },
+        {
+            "dst": 16,
+            "id": 69,
+            "length": 84,
+            "slots": 320,
+            "src": 15
+        },
+        {
+            "dst": 15,
+            "id": 70,
+            "length": 121,
+            "slots": 320,
+            "src": 17
+        },
+        {
+            "dst": 17,
+            "id": 71,
+            "length": 121,
+            "slots": 320,
+            "src": 15
+        },
+        {
+            "dst": 15,
+            "id": 72,
+            "length": 151,
+            "slots": 320,
+            "src": 20
+        },
+        {
+            "dst": 20,
+            "id": 73,
+            "length": 151,
+            "slots": 320,
+            "src": 15
+        },
+        {
+            "dst": 16,
+            "id": 74,
+            "length": 56,
+            "slots": 320,
+            "src": 17
+        },
+        {
+            "dst": 17,
+            "id": 75,
+            "length": 56,
+            "slots": 320,
+            "src": 16
+        },
+        {
+            "dst": 19,
+            "id": 76,
+            "length": 141,
+            "slots": 320,
+            "src": 20
+        },
+        {
+            "dst": 20,
+            "id": 77,
+            "length": 141,
+            "slots": 320,
+            "src": 19
+        }
+    ]
+}

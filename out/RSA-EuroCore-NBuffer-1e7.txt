@@ -1,0 +1,11 @@
+N/Buffer earlang index: 0, earlang: 180, general blocking: 5e-07, BBP: 1.38426e-06
+N/Buffer earlang index: 1, earlang: 216, general blocking: 1.49e-05, BBP: 4.1251e-05
+N/Buffer earlang index: 2, earlang: 252, general blocking: 0.0002098, BBP: 0.000580837
+N/Buffer earlang index: 3, earlang: 288, general blocking: 0.0013015, BBP: 0.00360324
+N/Buffer earlang index: 4, earlang: 324, general blocking: 0.0045587, BBP: 0.0126209
+N/Buffer earlang index: 5, earlang: 360, general blocking: 0.0103221, BBP: 0.028577
+N/Buffer earlang index: 6, earlang: 396, general blocking: 0.0181437, BBP: 0.0502313
+N/Buffer earlang index: 7, earlang: 432, general blocking: 0.0270415, BBP: 0.0748651
+N/Buffer earlang index: 8, earlang: 468, general blocking: 0.0362415, BBP: 0.100336
+N/Buffer earlang index: 9, earlang: 504, general blocking: 0.0453926, BBP: 0.12567
+N/Buffer earlang index: 10, earlang: 540, general blocking: 0.0542632, BBP: 0.150229
