@@ -1,42 +1,24 @@
+OLD REACH/MODULATION:
 N/Buffer earlang index: 0, earlang: 180, general blocking: 0.0012324, BBP: 0.00341193
-W/Buffer earlang index: 0, earlang: 180, BBP: nan, general blocking: 0, general blocking (original): 0.0016624, buffer size: 0, reallocated: 16624, Average try per allocated element: 9.11249, Average service time: 0.0820612, Average service time (ALL): 0.0820612, Average buffer size: 0.0245535
 N/Buffer earlang index: 1, earlang: 216, general blocking: 0.0079072, BBP: 0.0218913
-W/Buffer earlang index: 1, earlang: 216, BBP: nan, general blocking: 0, general blocking (original): 0.0214226, buffer size: 0, reallocated: 214226, Average try per allocated element: 9.17559, Average service time: 0.157911, Average service time (ALL): 0.157911, Average buffer size: 0.730643
 N/Buffer earlang index: 2, earlang: 252, general blocking: 0.0217747, BBP: 0.0602832
 N/Buffer earlang index: 3, earlang: 288, general blocking: 0.0379566, BBP: 0.105082
 N/Buffer earlang index: 4, earlang: 324, general blocking: 0.0537342, BBP: 0.14876
-W/Buffer earlang index: 2, earlang: 252, BBP: 1.75955e-05, general blocking: 0, general blocking (original): 0.0880293, buffer size: 44, reallocated: 880293, Average try per allocated element: 9.72292, Average service time: 0.984833, Average service time (ALL): 0.984872, Average buffer size: 21.8452
 N/Buffer earlang index: 5, earlang: 360, general blocking: 0.0674227, BBP: 0.186655
 N/Buffer earlang index: 6, earlang: 396, general blocking: 0.0797981, BBP: 0.22091
 N/Buffer earlang index: 7, earlang: 432, general blocking: 0.0904073, BBP: 0.250276
 N/Buffer earlang index: 8, earlang: 468, general blocking: 0.0996874, BBP: 0.275955
-W/Buffer earlang index: 3, earlang: 288, BBP: 0.0648259, general blocking: 0, general blocking (original): 0.107451, buffer size: 207157, reallocated: 1074514, Average try per allocated element: 9.11285, Average service time: 3343.38, Average service time (ALL): 3989.15, Average buffer size: 103489
 N/Buffer earlang index: 9, earlang: 504, general blocking: 0.108027, BBP: 0.299029
 N/Buffer earlang index: 10, earlang: 540, general blocking: 0.115585, BBP: 0.319936
-W/Buffer earlang index: 4, earlang: 324, BBP: 0.130074, general blocking: 0, general blocking (original): 0.11215, buffer size: 415682, reallocated: 1121505, Average try per allocated element: 8.54525, Average service time: 5729.66, Average service time (ALL): 7843.19, Average buffer size: 207906
 N/Buffer earlang index: 11, earlang: 576, general blocking: 0.122633, BBP: 0.339432
 N/Buffer earlang index: 12, earlang: 612, general blocking: 0.128673, BBP: 0.356104
 N/Buffer earlang index: 13, earlang: 648, general blocking: 0.134481, BBP: 0.372141
-W/Buffer earlang index: 5, earlang: 360, BBP: 0.184039, general blocking: 0, general blocking (original): 0.117047, buffer size: 588150, reallocated: 1170470, Average try per allocated element: 8.04049, Average service time: 6983.01, Average service time (ALL): 10492.2, Average buffer size: 294242
 N/Buffer earlang index: 14, earlang: 684, general blocking: 0.139608, BBP: 0.386235
 N/Buffer earlang index: 15, earlang: 720, general blocking: 0.144606, BBP: 0.39994
 N/Buffer earlang index: 16, earlang: 756, general blocking: 0.149177, BBP: 0.412363
-W/Buffer earlang index: 6, earlang: 396, BBP: 0.228822, general blocking: 0, general blocking (original): 0.121249, buffer size: 731277, reallocated: 1212489, Average try per allocated element: 7.64385, Average service time: 7627.32, Average service time (ALL): 12206.8, Average buffer size: 365587
 N/Buffer earlang index: 17, earlang: 792, general blocking: 0.153501, BBP: 0.423908
 N/Buffer earlang index: 18, earlang: 828, general blocking: 0.157703, BBP: 0.434849
-W/Buffer earlang index: 7, earlang: 432, BBP: 0.26653, general blocking: 0, general blocking (original): 0.125423, buffer size: 851815, reallocated: 1254234, Average try per allocated element: 7.29339, Average service time: 7858.56, Average service time (ALL): 13202.1, Average buffer size: 425905
 N/Buffer earlang index: 19, earlang: 864, general blocking: 0.161757, BBP: 0.445151
 N/Buffer earlang index: 20, earlang: 900, general blocking: 0.166088, BBP: 0.45553
-W/Buffer earlang index: 8, earlang: 468, BBP: 0.299065, general blocking: 0, general blocking (original): 0.129226, buffer size: 955815, reallocated: 1292263, Average try per allocated element: 6.99831, Average service time: 7894.57, Average service time (ALL): 13737.4, Average buffer size: 477907
-W/Buffer earlang index: 9, earlang: 504, BBP: 0.327797, general blocking: 0, general blocking (original): 0.133078, buffer size: 1047714, reallocated: 1330783, Average try per allocated element: 6.72666, Average service time: 7804.57, Average service time (ALL): 13961.7, Average buffer size: 523765
-W/Buffer earlang index: 10, earlang: 540, BBP: 0.35328, general blocking: 0, general blocking (original): 0.136734, buffer size: 1129216, reallocated: 1367343, Average try per allocated element: 6.4871, Average service time: 7649.44, Average service time (ALL): 13963.1, Average buffer size: 564498
-W/Buffer earlang index: 11, earlang: 576, BBP: 0.376128, general blocking: 0, general blocking (original): 0.140365, buffer size: 1202391, reallocated: 1403647, Average try per allocated element: 6.26723, Average service time: 7431.11, Average service time (ALL): 13802.7, Average buffer size: 600633
-W/Buffer earlang index: 12, earlang: 612, BBP: 0.396855, general blocking: 0, general blocking (original): 0.143813, buffer size: 1268761, reallocated: 1438133, Average try per allocated element: 6.07078, Average service time: 7224.91, Average service time (ALL): 13570.2, Average buffer size: 634527
-W/Buffer earlang index: 13, earlang: 648, BBP: 0.415815, general blocking: 0, general blocking (original): 0.147314, buffer size: 1329592, reallocated: 1473141, Average try per allocated element: 5.88515, Average service time: 6969.08, Average service time (ALL): 13251.1, Average buffer size: 664974
-W/Buffer earlang index: 14, earlang: 684, BBP: 0.432558, general blocking: 0, general blocking (original): 0.150648, buffer size: 1383610, reallocated: 1506484, Average try per allocated element: 5.71908, Average service time: 6708.48, Average service time (ALL): 12877.2, Average buffer size: 691550
-W/Buffer earlang index: 15, earlang: 720, BBP: 0.44844, general blocking: 0, general blocking (original): 0.153708, buffer size: 1434972, reallocated: 1537084, Average try per allocated element: 5.57183, Average service time: 6470.76, Average service time (ALL): 12536.7, Average buffer size: 717499
-W/Buffer earlang index: 16, earlang: 756, BBP: 0.463387, general blocking: 0, general blocking (original): 0.156926, buffer size: 1483560, reallocated: 1569256, Average try per allocated element: 5.42647, Average service time: 6227.11, Average service time (ALL): 12161.2, Average buffer size: 741374
-W/Buffer earlang index: 17, earlang: 792, BBP: 0.47701, general blocking: 0, general blocking (original): 0.160121, buffer size: 1528944, reallocated: 1601210, Average try per allocated element: 5.2899, Average service time: 6020.18, Average service time (ALL): 11782.2, Average buffer size: 764219
-W/Buffer earlang index: 18, earlang: 828, BBP: 0.489677, general blocking: 0, general blocking (original): 0.163144, buffer size: 1571738, reallocated: 1631436, Average try per allocated element: 5.16564, Average service time: 5804.98, Average service time (ALL): 11420.8, Average buffer size: 785789
-W/Buffer earlang index: 19, earlang: 864, BBP: 0.501608, general blocking: 0, general blocking (original): 0.166341, buffer size: 1613757, reallocated: 1663406, Average try per allocated element: 5.04111, Average service time: 5632.24, Average service time (ALL): 11062, Average buffer size: 806749
-W/Buffer earlang index: 20, earlang: 900, BBP: 0.513367, general blocking: 0, general blocking (original): 0.169742, buffer size: 1656907, reallocated: 1697421, Average try per allocated element: 4.91429, Average service time: 5386.78, Average service time (ALL): 10715.1, Average buffer size: 828203
+
+NEW REACH/MODULATION:

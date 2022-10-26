@@ -1,3 +1,4 @@
+OLD REACH/MODULATION:
 N/Buffer earlang index: 0, earlang: 180, general blocking: 5e-07, BBP: 1.38426e-06
 N/Buffer earlang index: 1, earlang: 216, general blocking: 1.49e-05, BBP: 4.1251e-05
 N/Buffer earlang index: 2, earlang: 252, general blocking: 0.0002098, BBP: 0.000580837
@@ -9,3 +10,15 @@ N/Buffer earlang index: 7, earlang: 432, general blocking: 0.0270415, BBP: 0.074
 N/Buffer earlang index: 8, earlang: 468, general blocking: 0.0362415, BBP: 0.100336
 N/Buffer earlang index: 9, earlang: 504, general blocking: 0.0453926, BBP: 0.12567
 N/Buffer earlang index: 10, earlang: 540, general blocking: 0.0542632, BBP: 0.150229
+N/Buffer earlang index: 11, earlang: 576, general blocking: 0.0626746, BBP: 0.173515
+N/Buffer earlang index: 12, earlang: 612, general blocking: 0.0709691, BBP: 0.196479
+N/Buffer earlang index: 13, earlang: 648, general blocking: 0.0789973, BBP: 0.218705
+N/Buffer earlang index: 14, earlang: 684, general blocking: 0.0865723, BBP: 0.239675
+N/Buffer earlang index: 15, earlang: 720, general blocking: 0.0935628, BBP: 0.259028
+N/Buffer earlang index: 16, earlang: 756, general blocking: 0.100505, BBP: 0.278247
+N/Buffer earlang index: 17, earlang: 792, general blocking: 0.107055, BBP: 0.296379
+N/Buffer earlang index: 18, earlang: 828, general blocking: 0.113202, BBP: 0.313395
+N/Buffer earlang index: 19, earlang: 864, general blocking: 0.119218, BBP: 0.330046
+N/Buffer earlang index: 20, earlang: 900, general blocking: 0.124634, BBP: 0.345041
+
+NEW REACH/MODULATION:

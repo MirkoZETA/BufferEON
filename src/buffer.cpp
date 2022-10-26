@@ -102,18 +102,21 @@ class Buffer {
 
 // Calculate BBP n/Buffer
 double bandwidthBlockingProbability(double bitrate_count_total[5], 
-                                   double bitrate_count_blocked[5],
-                                   double mean_weight_bitrate[5])
+                                    double bitrate_count_blocked[5],
+                                    double mean_weight_bitrate[5],
+                                    bool RSA)
     {
     double BBP = 0;
     double BP = 0;
     double total_weight = 0;
+    int end = 5;
+    if (RSA) end = 4;
 
-    for (int b = 0; b < 5; b++){
+    for (int b = 0; b < end; b++){
+        total_weight += mean_weight_bitrate[b];
         if (bitrate_count_total[b] == 0) continue;
         BP = bitrate_count_blocked[b] / bitrate_count_total[b];
         BBP += mean_weight_bitrate[b] * BP;
-        total_weight += mean_weight_bitrate[b];
     }
 
     return (BBP/total_weight);
@@ -122,11 +125,14 @@ double bandwidthBlockingProbability(double bitrate_count_total[5],
 // Calculate BBP w/buffer
 double bandwidthBlockingProbabilityWBuffer(double bitrate_count_total[5], 
                                            std::deque<buffer_element> buffer,
-                                           double mean_weight_bitrate[5])
+                                           double mean_weight_bitrate[5],
+                                           bool RSA)
     {
     double BBP = 0;
     double BP = 0;
     double total_weight = 0;
+    int end = 5;
+    if (RSA) end = 4;
 
     double count_blocked[5] = {0.0, 0.0, 0.0, 0.0, 0.0};
 
@@ -135,10 +141,10 @@ double bandwidthBlockingProbabilityWBuffer(double bitrate_count_total[5],
     }
 
     for (int b = 0; b < 5; b++){
+        total_weight += mean_weight_bitrate[b];
         if (count_blocked[b] == 0) continue;
         BP = count_blocked[b] / bitrate_count_total[b];
         BBP += mean_weight_bitrate[b] * BP;
-        total_weight += mean_weight_bitrate[b];
     }
 
     return (BBP/total_weight);
@@ -177,7 +183,7 @@ void resultsToFile(bool buffer_state, std::fstream &output, double BBP, double B
             output << "W/Buffer earlang index: " << lambda_index
                     << ", earlang: " << earlang
                     << ", BBP: " << BBP 
-                    << ", general blocking: " << (buffer.size()/(number_connections)) 
+                    << ", general blocking: " << (buffer.size()/(double)number_connections) 
                     << ", general blocking (original): " << BP
                     << ", buffer size: " << buffer.size() 
                     << ", reallocated: " << buffer.poped 

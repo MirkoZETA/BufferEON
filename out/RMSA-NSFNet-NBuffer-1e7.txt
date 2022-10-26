@@ -1,3 +1,4 @@
+OLD REACH/MODULATION:
 N/Buffer earlang index: 0, earlang: 180, general blocking: 0.0002848, BBP: 0.000866903
 N/Buffer earlang index: 1, earlang: 216, general blocking: 0.0028172, BBP: 0.00856845
 N/Buffer earlang index: 2, earlang: 252, general blocking: 0.0103582, BBP: 0.031486
@@ -19,3 +20,5 @@ N/Buffer earlang index: 17, earlang: 792, general blocking: 0.119474, BBP: 0.342
 N/Buffer earlang index: 18, earlang: 828, general blocking: 0.124135, BBP: 0.352513
 N/Buffer earlang index: 19, earlang: 864, general blocking: 0.128843, BBP: 0.362545
 N/Buffer earlang index: 20, earlang: 900, general blocking: 0.133386, BBP: 0.371955
+
+NEW REACH/MODULATION:

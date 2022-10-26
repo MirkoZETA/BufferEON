@@ -3,31 +3,31 @@
         {
             "BPSK": {
                 "slots": 1,
-                "reach": 13000
+                "reach": 5520
             }
         }
     ],
     "40": [
         {
             "BPSK": {
-                "slots": 2,
-                "reach": 13000
+                "slots": 4,
+                "reach": 5520
             }
         }
     ],
     "100": [
         {
             "BPSK": {
-                "slots": 5,
-                "reach": 13000
+                "slots": 8,
+                "reach": 5520
             }
         }
     ],
     "400": [
         {
             "BPSK": {
-                "slots": 18,
-                "reach": 13000
+                "slots": 32,
+                "reach": 5520
             }
         }
     ]

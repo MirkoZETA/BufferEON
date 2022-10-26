@@ -1,2 +1,0 @@
-N/Buffer earlang index: 0, earlang: 180, general blocking: 1e-07, BBP: 3.04516e-07
-N/Buffer earlang index: 1, earlang: 216, general blocking: 8e-06, BBP: 2.40037e-05
