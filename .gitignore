@@ -1,0 +1,11 @@
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+executables/
+realloc_times/*
+RMSA_NBuffer.txt
+RMSA_WBuffer.txt
+RSA_NBuffer.txt
+RSA_WBuffer.txt
