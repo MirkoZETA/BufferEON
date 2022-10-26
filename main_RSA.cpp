@@ -22,7 +22,7 @@ double bitrate_count_total[5] = {0.0, 0.0, 0.0, 0.0, 0.0};
 double bitrate_count_blocked[5] = {0.0, 0.0, 0.0, 0.0, 0.0};
 
 // Buffer state
-bool buffer_state = true;
+bool buffer_state = false;
 bool allocating_from_buffer = false;
 
 // Weight RMSA:
@@ -36,6 +36,7 @@ Controller *buffer_controller;
 Simulator sim;
 
 // Variables for output of times every connection is allocated from buffer
+/*
 std::fstream realloc_time;
 const char* fileName[30] = {
                     "./realloc_times/1_","./realloc_times/2_","./realloc_times/3_",
@@ -52,7 +53,8 @@ const char* fileName[30] = {
 const char* concatenate[6] = {
                     "NSFnet_RSA.txt", "COST239_RSA.txt", "USNet_RSA.txt", "UKNet_RSA.txt", "EuroCore_RSA.txt", "ARPANet_RSA.txt"
                     };
-char file[30];
+char file[50];
+*/
 
 // Save last time in simulation
 double last_time = 0;
@@ -87,6 +89,7 @@ BEGIN_ALLOC_FUNCTION(FirstFit) {
         for (int l = 0; l < NUMBER_OF_LINKS(r);
             l++){ // <- this loops through the links that the current route contains
 
+          // Not used for RSA:
           //route_length += LINK_IN_ROUTE(r,l)->getLength();
 
           for (int s = 0; s < LINK_IN_ROUTE(r, l)->getSlots();
@@ -95,12 +98,14 @@ BEGIN_ALLOC_FUNCTION(FirstFit) {
             totalSlots[s] = totalSlots[s] | LINK_IN_ROUTE(r, l)->getSlot(s);
             }
           }
+
+          // Not used for RSA:
           // We verify that the current modulation format has sufficient reach
           //if (route_length > REQ_REACH(m))
           //{
-            // std::cout << "Not reaching!\n";
             //continue;
           //}
+
           // Number of consecutive free slots:
           currentNumberSlots = 0;
           currentSlotIndex = 0;
@@ -168,8 +173,7 @@ BEGIN_UNALLOC_CALLBACK_FUNCTION {
       buffer.mean_attempts += buffer.front()->current_attempts;
 
       // We output the currrent time being allocated
-      realloc_time << t << "\n";
-      //std::cout << t << "\n";
+      //realloc_time << t << "\n";
       
       // Element allocated so we poped it and delete() members
       delete(buffer.front()->bitRate);
@@ -212,11 +216,10 @@ int main(int argc, char* argv[]) {
     if (buffer_state){
       USE_UNALLOC_FUNCTION(sim);
       // Output of realloc times:
-      strncpy(file, "", sizeof(file));
-      strcat(file, fileName[lambda]);
-      strcat(file, concatenate[0]);
-      std::cout << file << "\n";
-      realloc_time.open(file, std::ios::out | std::ios::app);
+      //strncpy(file, "", sizeof(file));
+      //strcat(file, fileName[lambda]);
+      //strcat(file, concatenate[0]);
+      //realloc_time.open(file, std::ios::out | std::ios::app);
     }
 
     // Assign parameters
@@ -239,15 +242,17 @@ int main(int argc, char* argv[]) {
 
     // Output results to TXT
     std::fstream output;
-    output.open("./out/RSA-NSFNet-WBuffer-1e7.txt", std::ios::out | std::ios::app);
+    output.open("./out/RSA-NSFNet-NBuffer-1e7.txt", std::ios::out | std::ios::app);
 
     resultsToFile(buffer_state, output, BBP_results, sim.getBlockingProbability(), number_connections,
                   lambda, lambdas[lambda], bitrate_count_blocked, buffer, last_time);
 
+    /*
     if (buffer_state) {
       realloc_time.close();
       strncpy(file, "", sizeof(file));
     }
+    */
 
     // Reset global variables
       // Clear buffer and related variables
@@ -504,10 +509,10 @@ int main(int argc, char* argv[]) {
     if (buffer_state){
       USE_UNALLOC_FUNCTION(sim);
       // Output of realloc times:
-      strncpy(file, "", sizeof(file));
-      strcat(file, fileName[lambda]);
-      strcat(file, concatenate[4]);
-      realloc_time.open(file, std::ios::out | std::ios::app);
+      //strncpy(file, "", sizeof(file));
+      //strcat(file, fileName[lambda]);
+      //strcat(file, concatenate[4]);
+      //realloc_time.open(file, std::ios::out | std::ios::app);
     }
 
     // Assign parameters
@@ -530,15 +535,17 @@ int main(int argc, char* argv[]) {
 
     // Output results to TXT
     std::fstream output;
-    output.open("./out/RSA-EuroCore-WBuffer-1e7.txt", std::ios::out | std::ios::app);
+    output.open("./out/RSA-EuroCore-NBuffer-1e7.txt", std::ios::out | std::ios::app);
 
     resultsToFile(buffer_state, output, BBP_results, sim.getBlockingProbability(), number_connections,
                   lambda, lambdas[lambda], bitrate_count_blocked, buffer, last_time);
 
+    /*
     if (buffer_state) {
       realloc_time.close();
       strncpy(file, "", sizeof(file));
     }
+    */
 
     // Reset global variables
       // Clear buffer and related variables
