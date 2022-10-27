@@ -187,7 +187,7 @@ END_UNALLOC_CALLBACK_FUNCTION
 int main(int argc, char* argv[]) {
 
   // Sim parameters
-  double  lambdas[30] = {72, 108, 144, 180, 216, 252, 288, 324, 360, 396, 432, 468, 504, 540, 576, 612, 648, 684, 720, 756, 792, 828, 864, 900, 936, 972, 1008, 1044, 1080, 1016};
+  double  lambdas[31] = {36, 72, 108, 144, 180, 216, 252, 288, 324, 360, 396, 432, 468, 504, 540, 576, 612, 648, 684, 720, 756, 792, 828, 864, 900, 936, 972, 1008, 1044, 1080, 1016};
   double mu = 1;
   int number_connections = 1e7;
 
@@ -229,15 +229,18 @@ int main(int argc, char* argv[]) {
     // Begin simulation
     sim.run();
 
-    // BBP calculation
+    // BBP calculation and output results
     double BBP_results;
-      // different BBP formula depending if buffer is activated
-    if (buffer_state) BBP_results = bandwidthBlockingProbabilityWBuffer(bitrate_count_total, buffer.elements, mean_weight_bitrate, false);
-    else BBP_results = bandwidthBlockingProbability(bitrate_count_total, bitrate_count_blocked, mean_weight_bitrate, false);
-
-    // Output results to TXT
     std::fstream output;
-    output.open("./out/RMSA-NSFNet-NBuffer-1e7.txt", std::ios::out | std::ios::app);
+      // different BBP formula depending if buffer is activated
+    if (buffer_state){
+      BBP_results = bandwidthBlockingProbabilityWBuffer(bitrate_count_total, buffer.elements, mean_weight_bitrate, false);
+      output.open("./out/RMSA-NSFNet-WBuffer-1e7.txt", std::ios::out | std::ios::app);
+    }
+    else {
+      BBP_results = bandwidthBlockingProbability(bitrate_count_total, bitrate_count_blocked, mean_weight_bitrate, false);
+      output.open("./out/RMSA-NSFNet-NBuffer-1e7.txt", std::ios::out | std::ios::app);
+    }
 
     resultsToFile(buffer_state, output, BBP_results, sim.getBlockingProbability(), number_connections,
                   lambda, lambdas[lambda], bitrate_count_blocked, buffer, last_time);
@@ -523,15 +526,18 @@ int main(int argc, char* argv[]) {
     // Begin simulation
     sim.run();
 
-    // BBP calculation
+    // BBP calculation and output results
     double BBP_results;
-      // different BBP formula depending if buffer is activated
-    if (buffer_state) BBP_results = bandwidthBlockingProbabilityWBuffer(bitrate_count_total, buffer.elements, mean_weight_bitrate, false);
-    else BBP_results = bandwidthBlockingProbability(bitrate_count_total, bitrate_count_blocked, mean_weight_bitrate, false);
-
-    // Output results to TXT
     std::fstream output;
-    output.open("./out/RMSA-EuroCore-NBuffer-1e7.txt", std::ios::out | std::ios::app);
+      // different BBP formula depending if buffer is activated
+    if (buffer_state){
+      BBP_results = bandwidthBlockingProbabilityWBuffer(bitrate_count_total, buffer.elements, mean_weight_bitrate, false);
+      output.open("./out/RMSA-EuroCore-WBuffer-1e7.txt", std::ios::out | std::ios::app);
+    }
+    else {
+      BBP_results = bandwidthBlockingProbability(bitrate_count_total, bitrate_count_blocked, mean_weight_bitrate, false);
+      output.open("./out/RMSA-EuroCore-NBuffer-1e7.txt", std::ios::out | std::ios::app);
+    }
 
     resultsToFile(buffer_state, output, BBP_results, sim.getBlockingProbability(), number_connections,
                   lambda, lambdas[lambda], bitrate_count_blocked, buffer, last_time);

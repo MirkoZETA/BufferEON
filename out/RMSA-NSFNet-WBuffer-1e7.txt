@@ -23,3 +23,4 @@ W/Buffer earlang index: 20, earlang: 900, BBP: 0.371057, general blocking: 0.133
 
 NEW REACH/MODULATION:
 
+W/Buffer earlang index: 0, earlang: 72, BBP: 0.0306298, general blocking: 0.0102867, general blocking (original): 0.0812049, buffer size: 102867, reallocated: 812049, Average try per allocated element: 12.1871, Average service time: 8720.89, Average service time (ALL): 9848.93, Average buffer size: 51072.5
